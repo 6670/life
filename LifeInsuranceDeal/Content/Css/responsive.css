@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (max-width: 320px){
+	
+	
+}
+
+@media (max-width: 360px){
+	
+	
+}
+
+@media (max-width: 480px){
+	
+	label.error{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 640px){
+	
+	.formbody h2 span{
+		font-size:17px;
+		font-weight:700;
+	}
+	.formbody h2{
+		padding:15px 8px;
+		font-size:16px;
+	}
+}
+
+@media (max-width: 1080px){
+	.container {
+		width: 100% !important;
+		margin: 0 auto;
+	}
+	.footersection{
+		padding:15px 0;
+	}
+	.disclaimer{
+		padding:15px;
+	}
+	.footersection ul {
+		width:100%;
+		margin: 0 auto;
+		padding-bottom: 15px;
+	}
+	.get_buttonDIV img{
+		width:100%;
+	}
+	.lowerbody h3{
+		margin:20px 0;
+	}
+	.headerNav li{
+		margin:8px 2px;
+	}
+	.header_section h1 a{
+		font-size:26px !important;
+		text-align:center;
+		margin-bottom:25px;
+	}
+	.header_section h1 a span{
+		font-size:26px !important;
+	}
+	.bodyTagline{
+		padding:10px;
+	}
+	.bodyTagline h3{
+		line-height:24px;
+		font-size:22px;
+	}
+	.bodyTagline ul{
+		display:none;
+	}
+	.bodyTagline ul li{
+		font-size:14px;
+	}
+	.comperNOWpic{
+		display:none;
+	}
+	header{
+		padding:15px 0;
+	}
+	.comon_body{
+		padding:0;
+	}
+	.img_section{
+		display:none;
+	}
+	.longfrom_L{
+		display:none;
+	}
+}

@@ -1,0 +1,122 @@
+﻿@model LifeInsuranceDeal.Models.FilterModel
+
+<div class="col-md-5 nopadding formbody">
+    <h2 class="longformTitle"><span>Get Free</span> No Obligation Quote!</h2>
+
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { id = "FilterForm", novalidate = "novalidate" }))
+    {
+        <div class="aboutu formbody">
+            <div class="radioSec">
+                <div class="col-sm-5 nopadding">
+                    <p>Cover required for</p>
+                </div>
+                <div class="col-sm-7 nopadding">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="SingleOwnership" id="optionsRadios1" value="true" checked="">
+                            You
+                        </label>
+                        <label class="form-check-label" style="padding-left:10px;">
+                            <input type="radio" class="form-check-input" name="SingleOwnership" id="optionsRadios2" value="false">
+                            You &amp; Your Partner
+                        </label>
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="res_section3">
+                <label>Product Type</label>
+                <select class="inputform" name="ProductType" id="product_type" type="select-one" data-validation="required">
+                    <option value="Life Insurance only" selected="">Life Insurance only</option>
+                    <option value="Mortgage Life Insurance">Mortgage Life Insurance</option>
+                    <!--<option value="Term Life Insurance">Term Life Insurance</option>
+                    <option value="Whole Life Insurance">Whole Life Insurance</option>
+                    <option value="Family Life Insurance">Family Life Insurance</option>-->
+                    <option value="Whole of Life">Whole of Life</option>
+                </select>
+            </div>
+            <div class="clr"></div>
+
+            <div class="col-sm-6 res_section3">
+                <label>Amount of cover</label>
+                <select class="inputform" name="CoverAmount" id="amount" type="select-one" data-validation="required">
+                    <option value="20000">£20,000</option>
+                    <option value="25000">£25,000</option>
+                    <option value="30000">£30,000</option>
+                    <option value="35000">£35,000</option>
+                    <option value="40000">£40,000</option>
+                    <option value="45000">£45,000</option>
+                    <option value="50000">£50,000</option>
+                    <option value="55000">£55,000</option>
+                    <option value="60000">£60,000</option>
+                    <option value="65000">£65,000</option>
+                    <option value="70000">£70,000</option>
+                    <option value="75000">£75,000</option>
+                    <option value="80000">£80,000</option>
+                    <option value="85000">£85,000</option>
+                    <option value="90000">£90,000</option>
+                    <option value="95000">£95,000</option>
+                    <option selected="selected" value="100000">£100,000</option>
+                    <option value="150000">£150,000</option>
+                    <option value="200000">£200,000</option>
+                    <option value="250000">£250,000</option>
+                    <option value="300000">£300,000</option>
+                    <option value="350000">£350,000</option>
+                    <option value="400000">£400,000</option>
+                    <option value="450000">£450,000</option>
+                    <option value="500000">£500,000</option>
+                    <option value="600000">£500,000+</option>
+                </select>
+            </div>
+            <div class="col-sm-6 res_section3">
+                <label>Cover Period</label>
+                <select class="inputform" name="CoverPeriod" id="period" type="select-one" data-validation="required">
+                    <option value="">Choose Here</option>
+                    <option value="5">5 years</option>
+                    <option value="6">6 years</option>
+                    <option value="7">7 years</option>
+                    <option value="8">8 years</option>
+                    <option value="9">9 years</option>
+                    <option value="10">10 years</option>
+                    <option value="11">11 years</option>
+                    <option value="12">12 years</option>
+                    <option value="13">13 years</option>
+                    <option value="14">14 years</option>
+                    <option value="15">15 years</option>
+                    <option value="16">16 years</option>
+                    <option value="17">17 years</option>
+                    <option value="18">18 years</option>
+                    <option value="19">19 years</option>
+                    <option value="20" selected="selected">20 years</option>
+                    <option value="21">21 years</option>
+                    <option value="22">22 years</option>
+                    <option value="23">23 years</option>
+                    <option value="24">24 years</option>
+                    <option value="25">25 years</option>
+                    <option value="26">26 years</option>
+                    <option value="27">27 years</option>
+                    <option value="28">28 years</option>
+                    <option value="29">29 years</option>
+                    <option value="30">30 years</option>
+                    <option value="31">31 years</option>
+                    <option value="32">32 years</option>
+                    <option value="33">33 years</option>
+                    <option value="34">34 years</option>
+                    <option value="35">35 years</option>
+                    <option value="36">36 years</option>
+                    <option value="37">37 years</option>
+                    <option value="38">38 years</option>
+                    <option value="39">39 years</option>
+                    <option value="40">40 years</option>
+
+                </select>
+            </div>
+            <div class="clr"></div>
+            <div class="send_req">
+                <input class="submit_buttonnew" value="GET A QUOTE &nbsp; >>" name="Submit" type="submit">
+            </div>
+            <div class="clr"></div>
+            <h3 style="font-size:16px; margin:20px 0 0 0;text-align:center;color:#fff"><i class="fa fa-lock" aria-hidden="true"></i> Safe, Secure and Confidential</h3>
+        </div>
+    }
+</div>

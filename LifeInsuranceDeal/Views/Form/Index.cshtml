@@ -1,0 +1,275 @@
+﻿
+@{
+    ViewBag.Title = "Form";
+    Layout = "~/Views/Shared/_LayoutForm.cshtml";
+}
+
+<section class="comon_body">
+    <div class="container allbody">
+        <div class="col-md-4 nopadding2">
+            <div class="longfrom_L">
+                <h3 style="font-size: 26px;">Congratulations</h3>
+                <p>
+                    <b>We've found a few plans that are suitable for your needs. Please complete the form to get your free personalised quote. </b>
+                </p>
+                <h3>Your Requirements</h3>
+                <p><b>Product Type</b> : Life Insurance only</p>
+                <p><b>Amount of cover</b> : <span>£</span>100000</p>
+                <p><b>Cover Period</b> : 20</p>
+                <img src=@Url.Content("~/content/img/secure_payment.jpg") alt="secure_pic" class="secure_pic">
+                <p>
+                    Your privacy is important to us. We are registered under the Data Protection act 1998. Registration Number :  ZA233488
+                </p>
+            </div>
+        </div>
+        <div class="col-md-8 nopadding">
+            @using (Html.BeginForm("Index", "Form", FormMethod.Post, new { id = "completeForm", novalidate = "novalidate" }))
+            {    <h2 style="text-align:center;" class="longformTitle">
+                Complete The Form To Get Your<span> Free Quote Now</span>
+            </h2>
+                <div class="aboutu formbody">
+                    <h2 style="background:none;">About You</h2>
+                    <div class="col-sm-4 res_section3">
+                        <div class="col-sm-4 res_section3">
+                            <label>Title</label>
+                            <select class="inputform" name="Title" id="title" type="select-one" style="padding: 8px 2px;" data-validation="required">
+                                <option value="">Please Select</option>
+                                <option value="Mr" selected="selected">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Miss">Miss</option>
+                                <option value="Ms,">Ms.</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-8 no-padding">
+                            <label>First Name</label>
+                            <input name="FirstName" id="first_name" placeholder="Enter First name" class="inputform" type="text" data-validation="required">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 res_section3 date">
+                        <label>Last Name</label>
+                        <input name="LastName" id="last_name" placeholder="Enter last name" class="inputform" type="text" data-validation="required">
+                    </div>
+                    <div class="col-sm-4 res_section3">
+                        <label>Email</label>
+                        <input name="Email" id="email" placeholder="Enter email" class="inputform" type="email" data-validation="email">
+                    </div>
+                    <div class="clr"></div>
+                    <div class="col-sm-4 res_section3">
+                        <label>Phone Number</label>
+                        <input name="HomePhone" placeholder="Enter phone no." class="inputform js-phone" type="text" data-validation="ukphone">
+                        <p id="error_msg" style=" color red; display block;"></p>
+                    </div>
+
+                    <div class="col-sm-4 res_section3">
+                        <label>Alternate Mobile Number</label>
+                        <input name="WorkPhone" placeholder="Enter mobile no." class="inputform js-phone" type="text" data-validation="ukphone" data-validation-optional="true">
+                        <p id="error_msg2" style=" color red; display block;"></p>
+                    </div>
+
+                    <div class="col-sm-4 res_section3">
+                        <label>Post Code</label>
+                        <input name="PostCode" placeholder="Enter Postcode" class="inputform" type="text" data-validation="ukpostcode">
+                        <p id="pin_error_msg" style="color :red; display: block;"></p>
+
+                    </div>
+                    <div class="clr"></div>
+                    <div class="col-sm-4 res_section3">
+                        <label>Address</label>
+                        <input name="Address" placeholder="Enter Address" class="inputform" type="text" data-validation="required">
+                    </div>
+                    <div class="col-sm-5 res_section3">
+                        <label>Date of birth</label>
+                        <br>
+                        <select name="Day" id="dd" class="inputform" type="select-one" style="width:75px;" tabindex="20" data-validation="required">
+                            <option value="">Day</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select name="Month" class="inputform" type="select-one" style="width:75px; padding:6px 2px;" tabindex="20" data-validation="required">
+                            <option value="">Month</option>
+                            <option value="01">Jan</option>
+                            <option value="02">Feb</option>
+                            <option value="03">Mar</option>
+                            <option value="04">Apr</option>
+                            <option value="05">May</option>
+                            <option value="06">Jun</option>
+                            <option value="07">Jul</option>
+                            <option value="08">Aug</option>
+                            <option value="09">Sep</option>
+                            <option value="10">Oct</option>
+                            <option value="11">Nov</option>
+                            <option value="12">Dec</option>
+                        </select>
+                        <select class="inputform" name="Year" type="select-one" style="width:75px;" tabindex="20" data-validation="required">
+                            <option value="">Year</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                            <option value="1994">1994</option>
+                            <option value="1993">1993</option>
+                            <option value="1992">1992</option>
+                            <option value="1991">1991</option>
+                            <option value="1990">1990</option>
+                            <option value="1989">1989</option>
+                            <option value="1988">1988</option>
+                            <option value="1987">1987</option>
+                            <option value="1986">1986</option>
+                            <option value="1985">1985</option>
+                            <option value="1984">1984</option>
+                            <option value="1983">1983</option>
+                            <option value="1982">1982</option>
+                            <option value="1981">1981</option>
+                            <option value="1980">1980</option>
+                            <option value="1979">1979</option>
+                            <option value="1978">1978</option>
+                            <option value="1977">1977</option>
+                            <option value="1976">1976</option>
+                            <option value="1975">1975</option>
+                            <option value="1974">1974</option>
+                            <option value="1973">1973</option>
+                            <option value="1972">1972</option>
+                            <option value="1971">1971</option>
+                            <option value="1970">1970</option>
+                            <option value="1969">1969</option>
+                            <option value="1968">1968</option>
+                            <option value="1967">1967</option>
+                            <option value="1966">1966</option>
+                            <option value="1965">1965</option>
+                            <option value="1964">1964</option>
+                            <option value="1963">1963</option>
+                            <option value="1962">1962</option>
+                            <option value="1961">1961</option>
+                            <option value="1960">1960</option>
+                            <option value="1959">1959</option>
+                            <option value="1958">1958</option>
+                            <option value="1957">1957</option>
+                            <option value="1956">1956</option>
+                            <option value="1955">1955</option>
+                            <option value="1954">1954</option>
+                            <option value="1953">1953</option>
+                            <option value="1952">1952</option>
+                            @*<option value="1951">1951</option>
+                                <option value="1950">1950</option>
+                                <option value="1949">1949</option>
+                                <option value="1948">1948</option>
+                                <option value="1947">1947</option>
+                                <option value="1946">1946</option>
+                                <option value="1945">1945</option>
+                                <option value="1944">1944</option>
+                                <option value="1943">1943</option>
+                                <option value="1942">1942</option>
+                                <option value="1941">1941</option>
+                                <option value="1940">1940</option>
+                                <option value="1939">1939</option>
+                                <option value="1938">1938</option>
+                                <option value="1937">1937</option>
+                                <option value="1936">1936</option>
+                                <option value="1935">1935</option>
+                                <option value="1934">1934</option>
+                                <option value="1933">1933</option>
+                                <option value="1932">1932</option>
+                                <option value="1931">1931</option>
+                                <option value="1930">1930</option>
+                                <option value="1929">1929</option>
+                                <option value="1928">1928</option>
+                                <option value="1927">1927</option>
+                                <option value="1926">1926</option>
+                                <option value="1925">1925</option>
+                                <option value="1924">1924</option>
+                                <option value="1923">1923</option>
+                                <option value="1922">1922</option>
+                                <option value="1921">1921</option>
+                                <option value="1920">1920</option>
+                                <option value="1919">1919</option>
+                                <option value="1918">1918</option>
+                                <option value="1917">1917</option>
+                                <option value="1916">1916</option>
+                                <option value="1915">1915</option>
+                                <option value="1914">1914</option>
+                                <option value="1913">1913</option>
+                                <option value="1912">1912</option>
+                                <option value="1911">1911</option>
+                                <option value="1910">1910</option>
+                                <option value="1909">1909</option>
+                                <option value="1908">1908</option>
+                                <option value="1907">1907</option>
+                                <option value="1906">1906</option>
+                                <option value="1905">1905</option>
+                                <option value="1904">1904</option>
+                                <option value="1903">1903</option>
+                                <option value="1902">1902</option>
+                                <option value="1901">1901</option>
+                                <option value="1900">1900</option>*@
+                        </select>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-1.5 res_section3">
+                        <label>Do you smoke?</label>
+                        <br>
+                        <div class="form-check">
+                            <label>
+                                <input name="Smoker" value="False" class="form-check-input" required="" type="radio" checked=""> &nbsp; No &nbsp;
+                            </label>
+                            <label>
+                                <input name="Smoker" value="True" class="form-check-input" required="" type="radio"> &nbsp; Yes
+                            </label>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                    <div class="send_req">
+                        <input class="submit_buttonnew" name="get_aquote" value="GET A FREE QUOTE &nbsp; >>" type="submit">
+                    </div>
+                    <p style="font-size: 13px; color:#fff;">
+                        By clicking "GET A FREE QUOTE" you agree to be contacted by email or telephone by an FCA authorised insurance firm and confirm that you have read and agreed to our <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal2" style="color:#fff; text-decoration: underline !important;">Terms &amp; Conditions</a> and <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" style="color:#fff; text-decoration: underline !important;">Privacy Policy</a>
+                    </p>
+                </div>
+                <div class="clr"></div>
+                <!--<p style="font-size: 13px;">
+                                        <input type="checkbox" value="" checked> &nbsp;
+
+                                        Un-check the box if you don’t like to receive any further promotions/offers for similar/ related products by Lifeinsuracedeal.co.uk or
+                their carefully chosen partners via e-mail, phone or text in future.
+                                    </p>-->
+            }
+        </div>
+        <div class="clr"></div>
+    </div>
+</section>
+<!--end_body-->
+<section class="brand_section">
+    <div class="container">
+        <img src=@Url.Content("~/content/img/brand.jpg") alt="brand" class="brand">
+    </div>
+</section>

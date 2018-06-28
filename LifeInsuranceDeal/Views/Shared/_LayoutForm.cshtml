@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Form | Life Insurance Deal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/Content/Img/favicon.ico" type="image/x-icon">
+
+    @Styles.Render("~/content/css/bundles")
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118283309-1"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118283309-1');
+    </script>
+
+</head>
+<body>
+    @Html.Partial("_PartialPopup")
+    @Html.Partial("_partialHeader")
+    @RenderBody()
+    <!--end_body-->
+    <!--<section class="brand_section">
+        <div class="container">
+            <img src="img/brand.jpg" alt="brand" class="brand">
+        </div>
+    </section>-->
+    @Html.Partial("_PartialFooter")
+@Scripts.Render("~/bundles/js")
+
+
+</body>
+</html>

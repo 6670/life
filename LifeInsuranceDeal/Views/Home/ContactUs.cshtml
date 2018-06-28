@@ -1,0 +1,213 @@
+﻿@model LifeInsuranceDeal.Models.FilterModel
+
+@{
+    ViewBag.Title = "Contact-Us";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<section class="comon_body">
+    <div class="container allbody">
+        <div class="col-md-7 nopadding">
+            <div class="img_section">
+                <img src=@Url.Content("~/content/img/global_pic.jpg") alt="slider_pic" class="resIMG">
+                <!--<div class="imgcaption">
+                    <h1>BUILDING A BRIDGE TO YOUR FUTURE</h1>
+                </div>-->
+            </div>
+            <div class="contact_body">
+                <h2>
+                    Contact us
+                    <br>
+                    <span>
+                        <b>To write to lifeinsurancedeal.co.uk:</b><br>
+                        Web Search Media Limited, 49 Whitefriars Avenue, Harrow, <br> Middlesex,United Kingdom, HA3 5RQ.
+                        <br>
+                        <br>
+                        <b>To email lifeinsurancedeal.co.uk– </b>
+                        <br>
+                        info@websearchmedia.co.uk
+                    </span>
+                </h2>
+
+                <!--<form action="" method="POST" id="contact_frm">
+                                        <div class="formSection">
+                    <div class="col-md-6 contactOne">
+                        <div class="form-group">
+                            <label for="" class="">Your Name</label>
+                            <input data-validation="required" class="contact_input" id="FullName" name="FullName" placeholder="Your name" type="text" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 contactOne">
+                        <div class="form-group">
+                            <label class="">Phone No.</label>
+                            <input class="contact_input" id="PhoneNumber" name="PhoneNumber" placeholder="Enter phone no." type="tel" value="">
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                    <div class="col-md-6 contactOne">
+                        <div class="form-group">
+                            <label class="">Email Address</label>
+                            <input class="contact_input" id="EmailAddress" name="EmailAddress" placeholder="Enter email" type="email" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 contactOne">
+                        <div class="form-group">
+                            <label class="">Subject</label>
+                            <input class="contact_input" id="subject" name="subject" placeholder="Enter subject" type="text" value="">
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                    <div class="col-md-12 contactOne">
+                        <div class="form-group">
+                            <div class="contactOne">
+                                <label for="exampleTextarea">Your Message</label>
+                                <textarea class="contact_input" data-validation="required" id="Message" name="Message" placeholder="Type your text..." rows="3" ></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+
+                    <input type="submit" class="sendbutton" value="Send" name="submit"/>
+
+                </div>
+                </form>-->
+                <div class="comperNOWpic">
+                    <img src=@Url.Content("~/content/img/compernow.png") alt="compernow" class="">
+                </div>
+            </div>
+        </div>
+        @Html.Partial("_PartialFilterForm",Model)
+           <div class="clear"></div>
+        <h5>
+            Lifeinsurancedeal.co.uk is trading style of Web Search Media Limited, registered in England and Wales Company Number – 10353758.<br>
+            Data is collected, processed and maintained in accordance with the Data Protection Act 1998. Registration Number: <strong>ZA233488</strong>.
+        </h5>
+        <!--<div class="col-md-5 nopadding formbody">
+            <h2>Fill out this form <span>GET A QUOTE!</span></h2>
+            <form action="loginform.php" method="POST" name="get_a_quote">
+                <div class="chousefor">
+                    <div class="radioSec">
+                        <div class="col-sm-5 nopadding">
+                            <p>Cover required for</p>
+                        </div>
+                        <div class="col-sm-7 nopadding">
+                             <div class="form-check">
+                              <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="cover_for" id="optionsRadios1" value="1" checked>
+                                You
+                              </label>
+                              <label class="form-check-label" style="padding-left:10px;">
+                                <input type="radio" class="form-check-input" name="cover_for" id="optionsRadios2" value="2">
+                                You & Your Partner
+                              </label>
+                            </div>
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                    <div class="res_section3">
+                        <label>Product Type</label>
+                        <select class="inputform" name="MortgageType" id="MortgageType" type="select-one">
+                            <option value="Life Insurance">Life Insurance</option>
+                            <option value="Term Life Insurance">Term Life Insurance</option>
+                            <option value="Whole Of Life Cover">Whole Life Insurance</option>
+                            <option value="Family Income Benefit">Family Life Insurance</option>
+                        </select>
+                    </div>
+                    <div class="clr"></div>
+
+                    <div class="col-sm-6 res_section3">
+                        <label>Amount of cover</label>
+                        <select class="inputform" name="MortgageType" id="MortgageType" type="select-one">
+                            <option value="20000"><span>&pound;</span>20,000</option>
+                            <option value="25000"><span>&pound;</span>25,000</option>
+                            <option value="30000"><span>&pound;</span>30,000</option>
+                            <option value="35000"><span>&pound;</span>35,000</option>
+                            <option value="40000"><span>&pound;</span>40,000</option>
+                            <option value="45000"><span>&pound;</span>45,000</option>
+                            <option value="50000"><span>&pound;</span>50,000</option>
+                            <option value="55000"><span>&pound;</span>55,000</option>
+                            <option value="60000"><span>&pound;</span>60,000</option>
+                            <option value="65000"><span>&pound;</span>65,000</option>
+                            <option value="70000"><span>&pound;</span>70,000</option>
+                            <option value="75000"><span>&pound;</span>75,000</option>
+                            <option value="80000"><span>&pound;</span>80,000</option>
+                            <option value="85000"><span>&pound;</span>85,000</option>
+                            <option value="90000"><span>&pound;</span>90,000</option>
+                            <option value="95000"><span>&pound;</span>95,000</option>
+                            <option selected="selected" value="100000"><span>&pound;</span>100,000</option>
+                            <option value="150000"><span>&pound;</span>150,000</option>
+                            <option value="200000"><span>&pound;</span>200,000</option>
+                            <option value="250000"><span>&pound;</span>250,000</option>
+                            <option value="300000"><span>&pound;</span>300,000</option>
+                            <option value="350000"><span>&pound;</span>350,000</option>
+                            <option value="400000"><span>&pound;</span>400,000</option>
+                            <option value="450000"><span>&pound;</span>450,000</option>
+                            <option value="500000"><span>&pound;</span>500,000</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6 res_section3">
+                        <label>Cover Period</label>
+                        <select class="inputform" name="MortgageType" id="MortgageType" type="select-one">
+                            <option value="">Choose Here</option>
+                            <option value="5">5 years</option>
+                            <option value="6">6 years</option>
+                            <option value="7">7 years</option>
+                            <option value="8">8 years</option>
+                            <option value="9">9 years</option>
+                            <option value="10">10 years</option>
+                            <option value="11">11 years</option>
+                            <option value="12">12 years</option>
+                            <option value="13">13 years</option>
+                            <option value="14">14 years</option>
+                            <option value="15">15 years</option>
+                            <option value="16">16 years</option>
+                            <option value="17">17 years</option>
+                            <option value="18">18 years</option>
+                            <option value="19">19 years</option>
+                            <option value="20" selected="selected">20 years</option>
+                        </select>
+                    </div>
+                    <div class="clr"></div>
+                        <div class="send_req">
+                        <input id="homeFormSubmit" class="submit_buttonnew" value="Next" type="submit">
+                    </div>
+                </div>
+            </form>
+
+        </div>-->
+        <div class="clr"></div>
+        <div class="container">
+            <img src=@Url.Content("~/content/img/brand.jpg") alt="brand" class="brand">
+        </div>
+    </div>
+</section>
+<section class="lower_body_text">
+    <div class="container lowerbody">
+        <div class="col-sm-4">
+            <img src="@Url.Content("~/content/img/apply.png")">
+            <h3>Fill up the form above to <br><b>GET A QUOTE</b> </h3>
+        </div>
+        <div class="col-sm-4">
+            <img src=@Url.Content("~/content/img/compare.png")>
+            <h3>Market Leading, Affordable Cover</h3>
+        </div>
+        <div class="col-sm-4">
+            <img src=@Url.Content("~/content/img/save.png")>
+            <h3><b>FREE,</b> No Obligation Quotes.</h3>
+        </div>
+        <div class="clr"></div>
+        <h1>Compare <span style="color:#ff4121;"><b>the market</b></span> in seconds! <br>use our fast free service to compare all leading uk life insurance policies </h1>
+    </div>
+    <div class="get_buttonDIV">
+        <center><a href="#"><img src=@Url.Content("~/content/img/get_button.png")></a></center>
+    </div>
+</section>
+<!--end_body-->
+<!--<section class="brand_section">
+    <div class="container">
+        <img src="img/brand.jpg" alt="brand" class="brand">
+    </div>
+</section>-->
+
+
+

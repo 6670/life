@@ -1,0 +1,57 @@
+﻿@model LifeInsuranceDeal.Models.FilterModel
+@{
+    ViewBag.Title = "Mortgage Life";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<section class="comon_body index_body">
+    <div class="container allbody">
+        <div class="col-md-7 nopadding">
+            <div class="img_section">
+                <img src=@Url.Content("~/content/img/slid_mortgage.jpg") alt="slider_pic" class="resIMG">
+                <!--<div class="imgcaption">
+                    <h1>Get Life Insurers For Family Cover Now</h1>
+                </div>-->
+            </div>
+            <div class="bodyTagline">
+                <h3>Looking to Compare <span>Mortgage Life Cover</span></h3>
+                <ul>
+                    <li>Protect your loved ones from <span> &pound;</span> 5* a month.</li>
+                    <li>Compare all the Leading UK Insurers.</li>
+                    <li>Cheapest policy to suit your individual circumstances.</li>
+                    <li>Fast, Free and No Obligation Comparison</li>
+                </ul>
+                <div class="comperNOWpic">
+                    <img src=@Url.Content("~/content/img/compernow.png") alt="compernow" class="">
+                </div>
+                <!--<h3 style="font-size:18px; margin:20px 0 0 0;">Safe, Secure and Confidential</h3>-->
+            </div>
+        </div>
+        @Html.Partial("_PartialFilterForm",Model)
+           <div class="clr"></div>
+        <div class="container">
+            <img src=@Url.Content("~/content/img/brand.jpg") alt="brand" class="brand">
+        </div>
+    </div>
+</section>
+<section class="lower_body_text">
+    <div class="container lowerbody">
+        <div class="col-sm-4">
+            <img src=@Url.Content("~/content/img/apply.png")>
+            <h3>Fill up the form above to <br><b>GET A QUOTE</b> </h3>
+        </div>
+        <div class="col-sm-4">
+            <img src=@Url.Content("~/content/img/compare.png")>
+            <h3>Market Leading, Affordable Cover</h3>
+        </div>
+        <div class="col-sm-4">
+            <img src=@Url.Content("~/content/img/save.png")>
+            <h3><b>FREE,</b> No Obligation Quotes.</h3>
+        </div>
+        <div class="clr"></div>
+        <h1>Compare <span style="color:#ff4121;"><b>the market</b></span> in seconds! <br>use our fast free service to compare all leading uk life insurance policies </h1>
+    </div>
+    <div class="get_buttonDIV">
+        <center><a href="#"><img src=@Url.Content("~/content/img/get_button.png")></a></center>
+    </div>
+</section>
